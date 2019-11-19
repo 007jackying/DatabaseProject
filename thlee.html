@@ -1,0 +1,71 @@
+<html>
+    <body>
+    <form action="/cgi-bin/thlee.py" method="POST">
+    <p><h2>Retrive information about each supplier who supplied the part </h2></p>
+    <p>Please enter a part's name </p>
+        <input type="text" name="pname"><br>
+    <p>Select the information you want to retrieve</p>
+    <div>   
+        <input type="checkbox" name="infor" value="S.sid" checked>
+        <label for="Supplier id">Supplier 's id</label>
+    </div>
+    <div>
+        <input type="checkbox" name="infor" value="S.sname" checked>
+        <label for="Suppliername">Supplier name</label>
+    </div>
+    <div>
+        <input type="checkbox" name="infor" value="S.address" checked>
+        <label for="Supplieraddress">Supplier address</label>
+    </div>
+    <div>
+        <input type="checkbox" name="infor" value="C.cost" checked>
+        <label for="Cost">Cost</label>
+    </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div style="min-height: 30px;">
+
+    </div>
+    <form action="/cgi-bin/thlee.py" method="POST">
+        <p><h2>Retrieve the names of the suppliers who have ever supplied a part with that cost or higher</h2></p>
+        <p>Please enter cost of the part</p>
+        <input type="text" name="cost"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div style="min-height: 30px;">
+
+    </div>
+    <form action="/cgi-bin/thlee.py" method="POST">
+        <p><h2>Retrieve the names and addresses for the suppliers who charge the most.</h2></p>
+        <p>Please enter pid of the part</p>
+        <input type="text" name="pid"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div style="min-height: 30px;">
+
+        </div>
+        <form action="/cgi-bin/thlee.py" method="POST">
+            <p><h2>Retrive the names of parts with that color which is supplied by all supplier in the given address</h2></p>
+            <p>Please enter color</p>
+            <input type="text" name="color"><br>
+            <p>Please enter address</p>
+            <input type="text" name="address"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div style="min-height: 30px;">
+
+            </div>
+            <form action="/cgi-bin/thlee.py" method="POST">
+                <p><h2>Retrive the sids and names of the suppliers in the address who do not supply any part</h2></p>
+                <p>Please enter address</p>
+                <input type="text" name="address2"><br>
+                <input type="submit" value="Submit">
+            </form>
+    
+
+
+
+
+
+</body>
+</html>
